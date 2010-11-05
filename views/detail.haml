@@ -1,0 +1,27 @@
+- if @ticket.nil?
+  .no-ticket 
+    %span Please select a ticket above.
+- else
+  .header
+    .line
+      .number="##{@ticket['number']}"
+      .summary= @ticket['summary']
+      .status= @ticket['status']
+    %p
+      %label Milestone:
+      - milestone = session[:milestones][@ticket['project_id']][@ticket['milestone_id']]
+      = milestone.nil? ? "(none)" : milestone
+    %p
+      %label Reported by:
+      = session[:people][@ticket['reporter_id']]
+    %p
+      %label Assigned to:
+      = session[:people][@ticket['assignee_id']]
+    %p
+      %label Created:
+      = DateTime.parse(@ticket['created_at']).strftime("%B %d %Y %I:%M%p")
+    %p
+      %label Last Updated:
+      = DateTime.parse(@ticket['updated_at']).strftime("%B %d %Y %I:%M%p")
+      
+  .description= @ticket['description']

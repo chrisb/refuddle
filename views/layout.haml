@@ -1,0 +1,27 @@
+!!! 5
+%head
+  %title Unfuddle Tickets
+  
+  %link{ :rel => 'stylesheet', :type => 'text/css', :href => 'http://yui.yahooapis.com/2.8.2r1/build/fonts/fonts-min.css' }
+  %link{ :rel => 'stylesheet', :type => 'text/css', :href => 'http://yui.yahooapis.com/2.8.2r1/build/button/assets/skins/sam/button.css' }
+  %link{ :rel => 'stylesheet', :type => 'text/css', :href => 'http://yui.yahooapis.com/2.8.2r1/build/datatable/assets/skins/sam/datatable.css' }
+
+  %script{ :type => 'text/javascript', :src => 'http://yui.yahooapis.com/2.8.2r1/build/yahoo-dom-event/yahoo-dom-event.js' }
+  %script{ :type => 'text/javascript', :src => 'http://yui.yahooapis.com/2.8.2r1/build/element/element-min.js' }
+  %script{ :type => 'text/javascript', :src => 'http://yui.yahooapis.com/2.8.2r1/build/button/button-min.js' }
+  %script{ :type => 'text/javascript', :src => 'http://yui.yahooapis.com/2.8.2r1/build/datasource/datasource-min.js' }
+  %script{ :type => 'text/javascript', :src => 'http://yui.yahooapis.com/2.8.2r1/build/datatable/datatable-min.js' }
+  %script{ :type => 'text/javascript', :src => 'http://yui.yahooapis.com/2.8.2r1/build/json/json-min.js' }
+  %script{ :type => 'text/javascript', :src => 'http://yui.yahooapis.com/2.8.2r1/build/connection/connection-min.js' }
+
+  %script{ :type => 'text/javascript', :src => 'http://prototypejs.org/assets/2009/8/31/prototype.js' }
+
+  %script{ :type => 'text/javascript', :src => 'javascripts/application.js' }  
+  %link{ :rel => 'stylesheet', :href => '/stylesheets/application.css', :type => 'text/css', :media => 'screen, projection' }
+%body.yui-skin-sam
+  %div.container
+    -# %div.navigation
+    -#   %a{ :hfref => "/tickets" } Unfuddle Tickets
+    -#   %a{ :hfref => "/performance" } Performance
+    -#   %a{ :hfref => "/transactions" } Transactions
+    = yield

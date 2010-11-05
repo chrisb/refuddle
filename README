@@ -1,0 +1,5 @@
+Refuddle is a small Sinatra app that acts as a web-based client for Unfuddle. The goal was to develop a project-agnostic view of one's Unfuddle tickets that fit with the OSX style. I recommend using something like Fluid (www.fluidapp.com) to create a SSB (single-site browser) for the app.
+
+Contributions are welcome!
+
+Enjoy!

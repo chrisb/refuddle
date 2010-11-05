@@ -1,0 +1,210 @@
+html, body {
+	font-family: 'Lucida Grande','Helvetica Neue',sans-serif;
+	margin-width: 0px;
+	margin: 0px;
+	background-color: #fafafa;
+	padding: 0px;
+}
+
+* {
+  cursor: default;
+}
+
+#login {
+  width: 450px;
+  background-color: #fafafa;
+  border: 1px solid #f2f2f2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 14px;
+}
+
+#login p.submit {
+  margin-top: 24px;
+  text-align: center;
+}
+
+#toolbar {
+  background-image: url(/images/toolbar.png);
+  height: 25px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: #000 1px 1px 1px;
+  line-height: 25px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#toolbar #logout {
+  float: right;
+}
+
+#ticket-detail .no-ticket {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#ticket-detail .no-ticket span {
+  background-color: #525252;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 2.0em;
+  border-radius: 12px;
+}
+
+#ticket-detail {
+  border-top: 1px solid #aaa;
+}
+
+#toolbar #logout a {
+  background-color: #777;
+  border-radius: 8px;
+  border: 1px solid #525252;
+  cursor: pointer;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: none;
+  font-size: 0.8em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#login p.info {
+  color: #525252;
+  font-size: 0.9em;
+  line-height: 2em;
+  margin-bottom: 50px !important;
+}
+
+#login h1 {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  text-shadow: #fff 1px 1px 2px;
+}
+
+#login p {
+  color: #525252;
+}
+
+#login p label {
+  float: left;
+  width: 130px;
+  text-align: right;
+  margin-right: 12px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #000;
+}
+
+#ticket-detail .header {
+  border-bottom: 1px solid #f2f2f2;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  background-color: #fafafa;
+}
+
+#ticket-detail .header .line .number {
+  opacity: 0.5;
+  float: left;
+  text-align: right;
+  width: 50px;
+  margin-right: 10px;
+}
+
+#ticket-detail .description {
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 1px solid #f2f2f2;
+  background-color: #fafafa;
+  padding: 14px;
+}
+
+#ticket-detail .header .line {
+  font-size: 1.2em;
+  padding: 14px;
+}
+
+#ticket-detail .header .line div {
+  display: inline;
+}
+
+#ticket-detail .header p {
+  color: #525252;
+  padding: 2px;
+  margin: 0px;
+}
+
+#ticket-detail .header p label {
+  width: 130px;
+  text-align: right;
+  color: #222;
+  font-weight: bold;
+  float: left;
+  margin-right: 10px;
+}
+
+
+/* YUI styles */
+
+.yui-skin-sam .yui-dt table {
+  width: 100%; 
+  border: 0px !important;
+  overflow-x: hidden !important;
+}
+
+.yui-skin-sam .yui-dt-scrollable .yui-dt-bd {
+  border-bottom: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+}
+
+.yui-skin-sam tr.yui-dt-odd {
+  background-color: #edf3fe !important;
+}
+
+.yui-skin-sam .yui-dt table th {
+  text-align: left;
+  border-bottom: 1px solid #aaa;
+  text-shadow: #fff 1px 1px 1px;
+}
+
+.yui-skin-sam .yui-dt tr.hold td { 
+  opacity: 0.4;
+}
+
+.yui-dt-col-number {
+  text-align: right !important;
+}
+
+.yui-skin-sam .yui-dt td {
+  border-right: none !important;
+  /* border-bottom: 1px solid #fafafa; */
+}
+
+.yui-skin-sam .yui-dt-scrollable .yui-dt-data tr.yui-dt-last td {
+  border-bottom: 0px !important;
+}
+
+.yui-skin-sam .yui-dt tr.yui-dt-first td {
+  border-top: 0px !important;
+}
+
+.yui-skin-sam .yui-dt-scrollable .yui-dt-hd {
+  border-top: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+}
+
+.yui-skin-sam th .yui-dt-liner {
+  font-size: 0.9em;
+  height: 16px;
+  line-height: 16px;
+  padding: 1px 10px !important;
+}
