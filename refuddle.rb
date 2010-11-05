@@ -3,6 +3,8 @@ require 'rest_client'
 require 'json'
 require 'sinatra'
 require 'haml'
+require 'date'
+require 'time'
 
 def unfuddle_call_api(request,passthru=false)
   puts "[API] #{request}"
