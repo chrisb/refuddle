@@ -25,7 +25,6 @@ use Rack::Session::Pool
   end
 }
 
-
 get '/logout' do
   [ :subdomain, :username, :password ].each { |k| session[k] = nil }
   redirect '/'

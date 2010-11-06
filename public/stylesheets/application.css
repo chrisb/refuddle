@@ -10,6 +10,42 @@ html, body {
   cursor: default;
 }
 
+#sidebar {
+  background-color: #dbdfe6;
+  border-right: 1px solid #bbbbbb;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 195px;
+}
+
+#pane-content {
+  margin-left: 195px;
+  margin-top: 25px;
+}
+
+#sidebar li.first {
+  margin-top: 25px;
+}
+
+#sidebar li {
+  list-style-type: none;
+  margin: 0px;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 12px;
+  margin-bottom: 8px;
+}
+
+#sidebar li.selected {
+  background-image: url(/images/sidebar-selected.png);
+  color: #fff;
+  text-shadow: #000 0px 1px 1px;
+}
+
 #login {
   background-image: url(/images/logo.png);
   background-position: center 16px;
@@ -17,7 +53,7 @@ html, body {
   padding: 14px;
   padding-top: 175px;
   width: 450px;
-  background-color: #f8f8f8;
+  background-color: #bbbbbb;
   border: 1px solid #eaeaea;
   margin-left: auto;
   margin-right: auto;
@@ -43,8 +79,11 @@ html, body {
   color: #fff;
   text-shadow: #000 1px 1px 1px;
   line-height: 25px;
-  padding-left: 12px;
-  padding-right: 12px;
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
 }
 
 #toolbar #logout {

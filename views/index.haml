@@ -4,7 +4,12 @@
   #logout
     %a{ :href => '/logout' } Log Out
 
-#yscrolling
-
-#ticket-detail
-  = haml(:detail)
+%ul#sidebar
+  %li.first.selected My Tickets
+  - session[:projects].each_pair do |id,project|
+    %li= "#{project}"
+  
+#pane-content
+  #yscrolling
+  #ticket-detail
+    = haml(:detail)
