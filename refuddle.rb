@@ -19,9 +19,12 @@ end
 # enable :sessions # we meed more than 4K of data
 use Rack::Session::Pool
 
-get '/login' do
-  haml(:login)
-end
+[ '/login', '/login/:subdomain' ].each { |route| 
+  get route do
+    haml(:login)
+  end
+}
+
 
 get '/logout' do
   [ :subdomain, :username, :password ].each { |k| session[k] = nil }

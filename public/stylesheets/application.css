@@ -11,13 +11,24 @@ html, body {
 }
 
 #login {
+  background-image: url(/images/logo.png);
+  background-position: center 16px;
+  background-repeat: no-repeat;
+  padding: 14px;
+  padding-top: 175px;
   width: 450px;
-  background-color: #fafafa;
-  border: 1px solid #f2f2f2;
+  background-color: #f8f8f8;
+  border: 1px solid #eaeaea;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  padding: 14px;
+  border-radius: 10px;
+}
+
+#login input[type=text], #login input[type=password] {
+  padding: 4px;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
 }
 
 #login p.submit {
@@ -79,6 +90,7 @@ html, body {
   color: #525252;
   font-size: 0.9em;
   line-height: 2em;
+  text-align: center;
   margin-bottom: 50px !important;
 }
 

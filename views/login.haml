@@ -1,9 +1,8 @@
 %form#login{ :action => '/login', :method => 'post' }
-  %h1 Refuddle
-  %p.info This is a tool I built to provide a better interface to Unfuddle. Due to the nature of the Unfuddle API I will need your username and password. If you're not comfortable providing this info... well, that sucks. Perhaps try changing your Unfuddle password to something else?
+  %p.info Due to the nature of the Unfuddle API I will need your username and password. If you're not comfortable providing this info... well, that sucks. Perhaps try changing your Unfuddle password to something else?
   %p
     %label{ :for => 'subdomain' } Unfuddle URL:
-    %input{ :type => 'text', :name => 'subdomain' }
+    %input{ :type => 'text', :name => 'subdomain', :value => params[:subdomain] }
     \.unfuddle.com
   %p
     %label{ :for => 'username' } Username:
