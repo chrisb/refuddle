@@ -52,7 +52,7 @@ get '/' do
 end
 
 get '/tickets.js' do
-  { :items => unfuddle_call_api('/ticket_reports/dynamic.json?conditions_string=assignee-eq-current,status-neq-closed,status-neq-resolved')['groups'].first['tickets'] }.to_json
+  { :items => unfuddle_call_api('/ticket_reports/dynamic.json?conditions_string=assignee-eq-current,status-neq-closed,status-neq-resolved')['groups'].first['tickets'].map { |t| t.merge( 'project_name' => session[:projects][t['project_id']] )} }.to_json
 end
 
 get '/ticket/:project_id/:number.js' do

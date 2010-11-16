@@ -8,7 +8,6 @@ var formatSummary = function (elCell, oRecord, oColumn, oData) {
   }
 };
 
-
 var formatStatus = function (elCell, oRecord, oColumn, oData) {
   if(oRecord._oData.summary.include('[hold]')) {
     elCell.innerHTML = 'hold';
@@ -25,6 +24,7 @@ YAHOO.util.Event.addListener(window, "load", function() {
   var myColumnDefsY = [
     { key:"number", width:20, label: "#", sortable: true },
     { key:"status", width:100, label: "Status", formatter: formatStatus, sortable: true },
+    { key:"project_name", width: 140, label: "Project", sortable: true },
     { key:"summary", label: "Summary", formatter: formatSummary, sortable: true  }
   ];
   
@@ -39,6 +39,7 @@ YAHOO.util.Event.addListener(window, "load", function() {
       { key: 'status' },
       { key: 'summary' },
       { key: 'project_id' },
+      { key: 'project_name' },
       { key: 'id' }
     ]
   };
