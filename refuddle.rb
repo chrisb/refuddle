@@ -8,7 +8,7 @@ require 'time'
 
 def unfuddle_call_api(request,passthru=false)
   puts "[API] #{request}"
-  data = RestClient.get("#{unfuddle_base_url}#{request}")
+  data = RestClient.get "#{unfuddle_base_url}#{request}", { :accept => :json }
   return passthru ? data : JSON.parse(data)
 end
 
